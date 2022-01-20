@@ -21,6 +21,7 @@ img{
 .article{
     width: 300px;
     float: left;
+    position: relative;
 }
 
 .row::after{
@@ -29,13 +30,32 @@ img{
     clear: both;
 }
 
+.article>span{
+    color: white;
+    font-weight: bolder;
+    padding: 1%;
+}
+
+.category{
+    position: relative;
+    bottom: 50px;
+}
+
+.sale{
+    background-color: #eb0037;
+}
+
+.sustain{
+    background-color: #00875a;
+}
+
 span{
-    display: inline-block;
     font-size: 14px;
 }
 
 .article h2{
     font-size: 16px;
+    ;
 }
 
 .price{
