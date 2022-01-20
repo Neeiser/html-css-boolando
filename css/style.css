@@ -3,3 +3,26 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.container{
+    height: 100vh;
+    width: 100vw;
+}
+
+img{
+    width: 300px;
+}
+
+.row{
+    padding: 5% 10%;
+}
+
+.article{
+    float: left;
+}
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
