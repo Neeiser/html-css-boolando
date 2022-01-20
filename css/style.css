@@ -21,7 +21,6 @@ img{
 .article{
     width: 300px;
     float: left;
-    position: relative;
 }
 
 .row::after{
@@ -30,23 +29,51 @@ img{
     clear: both;
 }
 
-.article>span{
+.product{
+    position: relative;
+}
+
+.product span{
     color: white;
     font-weight: bolder;
     padding: 1%;
 }
 
-.category{
-    position: relative;
-    bottom: 50px;
-}
-
 .sale{
     background-color: #eb0037;
+    position: absolute;
+    bottom: 40px;
+    left: 0px;
 }
 
+/* Affiancarlo allo span che porta la percentuale di sconto*/
 .sustain{
+    position: absolute;
+    bottom: 40px;
+    left: 45px;
     background-color: #00875a;
+}
+
+/* Specifico lo span da solo (ultimo articolo) di mettersi all'inizio*/
+.bottom-right .sustain{
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+}
+
+/* Sovrascrivo l'ordine dato precedentemente al rigo 36 con !important*/
+.heart{
+    font-size: larger;
+    color: red !important;
+    background-color: white;
+    width: 10%;      /* Per riuscire a personalizzare il contenitore del cuore */
+    text-align: center;
+    padding: 5%;
+    border: 1px solid red;
+    border-radius: 10px;
+    position: absolute;
+    top: 25px;
+    right: 10px;
 }
 
 span{
