@@ -7,20 +7,19 @@
 
 .container{
     height: 100vh;
-    width: 100vw;
+    width: 80%;
+    margin: 0 auto;
 }
 
 img{
-    width: 300px;
+    width: 100%;
 }
 
-.row{
-    padding: 5% 0;
-}
 
 .article{
-    width: 300px;
+    width: calc(33% - 1em);
     float: left;
+    margin: 1em;
 }
 
 .row::after{
@@ -92,4 +91,17 @@ span{
 
 .old-price{
     text-decoration: line-through;
+}
+
+/* Sezione HOVERING */
+
+.img-hover{
+    display: none;
+}
+
+.article:hover .img-hover{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
