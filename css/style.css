@@ -15,11 +15,10 @@ img{
     width: 100%;
 }
 
-
 .article{
-    width: calc(33% - 1em);
+    width: calc(30% - 1rem);
     float: left;
-    margin: 1em;
+    margin: 1rem;
 }
 
 .row::after{
