@@ -15,7 +15,7 @@ img{
 }
 
 .article{
-    width: calc(33% - 1rem);
+    width: calc(100%/3 - 1rem);
     float: left;
     margin: 0.5rem;
 }
